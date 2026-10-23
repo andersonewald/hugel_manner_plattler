@@ -1,2 +1,19 @@
-**/__pycache__/
-*.pyc
+# Variáveis de ambiente e senhas
+.env
+
+# Banco de dados e logs locais
+*.sqlite3
+*.log
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Arquivos temporários do Python e VS Code
+__pycache__/
+*.py[cod]
+.vscode/
+
+# Arquivos estáticos coletados
+staticfiles/

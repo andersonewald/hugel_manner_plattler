@@ -1,0 +1,548 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$JqaUNUhfQLrxnmzkzKdhIs$Rl7bQglGmGNOjElI13Oa/IbfS1GHPmsPfJXocnmGVrs=",
+        "last_login": "2026-06-26T21:54:13.958Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "anderson.merscher@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-25T20:10:27.441Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$yclchaSo7kdwBum2iac6RZ$3d4a7dQGFVC8SjuKMC90PRtqeCHWBwygxMNKGn6jWwY=",
+        "last_login": "2026-08-06T21:12:47.317Z",
+        "is_superuser": true,
+        "username": "anderson.ewald",
+        "first_name": "",
+        "last_name": "",
+        "email": "anderson.merscher@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-30T20:05:25.574Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9o3cjdeqw94gfr29qv33guxw6lp3tif5",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-ZY0p6XMGa71e4wBypDipEHeHSCmgfTPzXiLitta4dV7ilMVFGHH63RLSg9sO8h3bbZY0t3WZktwVedAuxznz83q4fwcVe_3WzpDGgYIBSmer0BXNliEpPShUrjjrPWZD7EPx6ElDMRk4GATgnKx4fwDhNjgk:1wfMJU:NNJRaADzhkAWHAz52-txPJ28WPaiQTObc1fM-8tiDRo",
+        "expire_date": "2026-07-16T18:39:04.787Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qnew6airedpkxom6jfqao1ci96nahmvq",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-ZY0p6XMGa71e4wBypDipEHeHSCmgfTPzXiLitta4dV7ilMVFGHH63RLSg9sO8h3bbZY0t3WZktwVedAuxznz83q4fwcVe_3WzpDGgYIBSmer0BXNliEpPShUrjjrPWZD7EPx6ElDMRk4GATgnKx4fwDhNjgk:1weelM:3YQwLD4wZz1AQjdkbo69G-sgXBgw6B2IGbsoyklANVI",
+        "expire_date": "2026-07-14T20:08:56.034Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "s79qvelf8ve7thejox9isj5jke2rqfxl",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-ZY0p6XMGa71e4wBypDipEHeHSCmgfTPzXiLitta4dV7ilMVFGHH63RLSg9sO8h3bbZY0t3WZktwVedAuxznz83q4fwcVe_3WzpDGgYIBSmer0BXNliEpPShUrjjrPWZD7EPx6ElDMRk4GATgnKx4fwDhNjgk:1ws5OR:QZfNEddgTQYeOas_J7w0wLuxkiVKl66LTf7k8zASUs4",
+        "expire_date": "2026-08-20T21:12:47.331Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zusaypma0yck4vc7n913xyik0o8honlb",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-ZY0p6XMGa71e4wBypDipEHeHSCmgfTPzXiLitta4dV7ilMVFGHH63RLSg9sO8h3bbZY0t3WZktwVedAuxznz83q4fwcVe_3WzpDGgYIBSmer0BXNliEpPShUrjjrPWZD7EPx6ElDMRk4GATgnKx4fwDhNjgk:1woOmC:k2U9E2kweWbCKkks-wIRsXUxlr1s_3NiV1kCuaw5j5Q",
+        "expire_date": "2026-08-10T17:06:04.134Z"
+    }
+},
+{
+    "model": "institucional.integrante",
+    "pk": 1,
+    "fields": {
+        "nome": "Anderson Merscher Ewald",
+        "instagram": "@andersonmerscher",
+        "no_grupo_desde": "Julho de 2016",
+        "foto": "integrantes/anderson-merscher-ewald_vi1Rw0B.jpg"
+    }
+},
+{
+    "model": "institucional.evento",
+    "pk": 3,
+    "fields": {
+        "nome": "Almoço Alemão",
+        "data_inicio": "2026-09-26",
+        "data_fim": null,
+        "horario": "11h",
+        "local": "Clube de Campinho",
+        "cidade": "Domingos Martins",
+        "descricao": "Nosso grupo Hügelmänner Plattler está organizando o Jantar Germânico – Especial 10 anos, um evento cultural alemão que acontecerá no dia 04 de julho de 2026, a partir das 18h, na Pousada Japerê, em Domingos Martins/ES. ✨\r\n\r\nO evento será uma noite típica alemã, com:\r\n🍻 Música tradicional\r\n🕺 Apresentações folclóricas\r\n🎯 Jogos germânicos\r\n🎶 Banda ao vivo\r\n🥨 Comida típica alemã\r\n\r\nO jantar será por reserva antecipada e o valor do prato é R$150,00.\r\nJá incluso um prato típico germanico.\r\nO pagamento é feito diretamente com um integrante do grupo.\r\n\r\nTeremos opções típicas da culinária alemã, como:\r\n🥨 Eisbein (joelho de porco defumado)\r\n🥨 Kassler (bisteca suína defumada)\r\n🥨 Duo de salsichas alemãs\r\n\r\nTodos os pratos acompanham batata, chucrute e spätzle. 🇩🇪🍽️\r\n\r\nA entrada no evento é gratuita, porém os pratos precisam ser reservados antecipadamente.\r\n\r\nSe quiser garantir o seu pedido ou tirar qualquer dúvida, é só chamar! 😊",
+        "card_divulgacao": "agenda/almoco-alemao.jpeg",
+        "link_ingresso": "https://wa.me/5527997806200"
+    }
+},
+{
+    "model": "institucional.parceiro",
+    "pk": 1,
+    "fields": {
+        "nome": "EL Produções de Softwares",
+        "logo": "parceiros/el-producoes-de-softwares.png",
+        "site_url": "https://www.el.com.br",
+        "ativo": true,
+        "ordem": 0
+    }
+},
+{
+    "model": "institucional.fotogaleria",
+    "pk": 1,
+    "fields": {
+        "titulo": "1",
+        "imagem": "galeria/bd74e88d.jpg",
+        "criado_em": "2026-08-07T13:27:23.997Z"
+    }
+},
+{
+    "model": "institucional.fotogaleria",
+    "pk": 2,
+    "fields": {
+        "titulo": "2",
+        "imagem": "galeria/3ac3963d.jpg",
+        "criado_em": "2026-08-07T13:27:39.964Z"
+    }
+},
+{
+    "model": "institucional.fotogaleria",
+    "pk": 3,
+    "fields": {
+        "titulo": "3",
+        "imagem": "galeria/5155c792.jpg",
+        "criado_em": "2026-08-07T13:27:49.131Z"
+    }
+},
+{
+    "model": "institucional.fotogaleria",
+    "pk": 4,
+    "fields": {
+        "titulo": "4",
+        "imagem": "galeria/56c77cd7.jpg",
+        "criado_em": "2026-08-07T13:27:58.334Z"
+    }
+},
+{
+    "model": "institucional.fotogaleria",
+    "pk": 5,
+    "fields": {
+        "titulo": "5",
+        "imagem": "galeria/89d0ec89.jpg",
+        "criado_em": "2026-08-07T13:50:39.058Z"
+    }
+},
+{
+    "model": "institucional.fotogaleria",
+    "pk": 6,
+    "fields": {
+        "titulo": "6",
+        "imagem": "galeria/20adc2fb.jpg",
+        "criado_em": "2026-08-07T13:50:47.252Z"
+    }
+},
+{
+    "model": "agenda.evento",
+    "pk": 1,
+    "fields": {
+        "nome": "Apresentação de Teste Forçado",
+        "data": "2026-06-30",
+        "horario": "20:00:00",
+        "local": "Praça Central",
+        "link_ingresso": null,
+        "descricao": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-06-27T01:10:15.739Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "integrante"
+        ],
+        "object_id": "1",
+        "object_repr": "Anderson Merscher Ewald",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-06-28T22:32:17.299Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "integrante"
+        ],
+        "object_id": "2",
+        "object_repr": "Iury Velten Dias",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-06-30T19:08:12.075Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "TESTE DE EVENTO",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-06-30T19:16:44.636Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "integrante"
+        ],
+        "object_id": "1",
+        "object_repr": "Anderson Merscher Ewald",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto do Integrante\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-06-30T19:20:25.164Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "integrante"
+        ],
+        "object_id": "2",
+        "object_repr": "Iury Velten Dias",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-06-30T19:28:20.352Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "TESTE DE EVENTO",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-06-30T19:28:58.747Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "1",
+        "object_repr": "mg_saofelixdeminas_pm (30/06/2026)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-06-30T19:52:37.181Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "1",
+        "object_repr": "mg_saofelixdeminas_pm (08/07/2026)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Data de In\\u00edcio\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-06-30T19:55:03.375Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "1",
+        "object_repr": "mg_saofelixdeminas_pm (08/07/2026)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-06-30T20:06:33.695Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "1",
+        "object_repr": "mg_saofelixdeminas_pm (08/07/2026)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-06-30T20:07:10.234Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "2",
+        "object_repr": "TESTE (30/06/2026)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-06-30T20:19:18.083Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "2",
+        "object_repr": "TESTE ANDERSON (30/06/2026)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nome do Evento\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-06-30T20:23:54.105Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "2",
+        "object_repr": "TESTE ANDERSON (30/06/2026)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-07-02T18:44:52.621Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "evento"
+        ],
+        "object_id": "3",
+        "object_repr": "Almoço Alemão (26/09/2026)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-08-06T21:13:30.758Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "parceiro"
+        ],
+        "object_id": "1",
+        "object_repr": "EL Produções de Softwares",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-08-07T13:27:24.123Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "fotogaleria"
+        ],
+        "object_id": "1",
+        "object_repr": "1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-08-07T13:27:39.968Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "fotogaleria"
+        ],
+        "object_id": "2",
+        "object_repr": "2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-08-07T13:27:49.134Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "fotogaleria"
+        ],
+        "object_id": "3",
+        "object_repr": "3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-08-07T13:27:58.338Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "fotogaleria"
+        ],
+        "object_id": "4",
+        "object_repr": "4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-08-07T13:50:39.063Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "fotogaleria"
+        ],
+        "object_id": "5",
+        "object_repr": "5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-08-07T13:50:47.255Z",
+        "user": [
+            "anderson.ewald"
+        ],
+        "content_type": [
+            "institucional",
+            "fotogaleria"
+        ],
+        "object_id": "6",
+        "object_repr": "6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

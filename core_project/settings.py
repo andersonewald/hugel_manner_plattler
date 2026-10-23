@@ -1,13 +1,26 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Carrega as variáveis de ambiente do arquivo .env (se existir)
+load_dotenv()
 
 # Caminho base do projeto
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Configurações de Desenvolvimento (Mantenha assim por enquanto)
-SECRET_KEY = 'django-insecure-chave-provisoria-hugel-manner'
-DEBUG = True
-ALLOWED_HOSTS = ['andersonewald.pythonanywhere.com', 'localhost', '127.0.0.1']
+# Configurações de Segurança e Ambiente
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-chave-provisoria-hugel-manner')
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
+
+ALLOWED_HOSTS = [
+    'andersonewald.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1',
+]
+# Permite adicionar hosts dinamicamente via arquivo .env na VPS
+if os.getenv('ALLOWED_HOSTS'):
+    ALLOWED_HOSTS.extend(os.getenv('ALLOWED_HOSTS').split(','))
+
 # Aplicações instaladas no projeto
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -26,9 +39,10 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', # 🌟 Suporte a arquivos estáticos na VPS
     'django.contrib.sessions.middleware.SessionMiddleware',
     
-    # 🌟 ADICIONADO: Middleware essencial para interceptar o clique nas bandeiras e mudar o idioma
+    # Middleware para interceptar o clique nas bandeiras e mudar o idioma
     'django.middleware.locale.LocaleMiddleware', 
     
     'django.middleware.common.CommonMiddleware',
@@ -43,7 +57,7 @@ ROOT_URLCONF = 'core_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'], # Caminho para a nossa pasta de HTMLs
+        'DIRS': [BASE_DIR / 'templates'], # Caminho para os templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -58,13 +72,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core_project.wsgi.application'
 
-# Base de dados padrão do Django (SQLite - cria um arquivo local simples)
-# Base de dados padrão do Django
+# Base de Dados MySQL
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        # Usando o os.path para cravar o caminho absoluto na raiz do projeto
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.getenv('DB_NAME', 'hugel_db'),
+        'USER': os.getenv('DB_USER', 'root'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'PnCdEL'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),
+        'PORT': os.getenv('DB_PORT', '3306'),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4',
+        },
     }
 }
 
@@ -74,7 +94,6 @@ TIME_ZONE = 'America/Sao_Paulo'
 USE_I18N = True
 USE_TZ = True
 
-# 🌟 ADICIONADO: Lista de idiomas suportados no site (bate com as opções do seu base.html)
 LANGUAGES = [
     ('pt-br', 'Português'),
     ('de', 'Deutsch'),
@@ -82,7 +101,6 @@ LANGUAGES = [
     ('es', 'Español'),
 ]
 
-# 🌟 ADICIONADO: Diretório onde ficarão guardados os arquivos de tradução das palavras
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
@@ -91,17 +109,20 @@ LOCALE_PATHS = [
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-# Configuração de Upload de Imagens (Essencial para o Blog e Patrocinadores)
+# 🌟 ADICIONADO: Pasta onde o collectstatic reunirá os arquivos estáticos na VPS
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Configuração de Upload de Imagens
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Em desenvolvimento, o e-mail não gasta internet e aparece direto no seu terminal!
+# Configurações de E-mail
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 465
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
-EMAIL_HOST_USER = 'hugelmannerplattler@gmail.com'  # E-mail que vai enviar
-EMAIL_HOST_PASSWORD = 'jodmsdjbvduqrmsf'     # Senha de aplicativo gerada no Google
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'hugelmannerplattler@gmail.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'jodmsdjbvduqrmsf')
